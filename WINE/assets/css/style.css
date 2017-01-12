@@ -1,0 +1,591 @@
+@font-face {
+    font-family: 'High Tower Text';
+    src:url(../fonts/htowert.ttf); 
+}
+@font-face {
+    font-family: 'Neutra Text Book';
+    src:url(../fonts/neutra-text-book.otf); 
+}
+@font-face {
+    font-family: "Neutra Text Demi";
+    src: url(../fonts/neutratext-demi-opentype.otf);
+}
+body {
+	background: url(../images/background_img.png) -500px 250px no-repeat, 
+	    		url(../images/background_img.png) 1000px 1100px no-repeat, 
+                url(../images/background.png);
+    font-family: 'High Tower Text';  
+}
+/*header*/
+header, main, .white_background {
+	float: left;
+    width: 100%;  
+}
+.white_background {
+    background: rgba(255, 255, 255, 0.7);
+}
+.autumn_background {
+    background: url(../images/slide.png) center bottom no-repeat;
+    background-size: cover;
+    height: 450px;
+}
+.container {	
+	width: 960px;
+	display: table;
+    margin: 0 auto;
+}
+.logo_image {
+    float: left;
+}
+.registration, .login_cart {
+    float: right;
+}
+.login_cart {
+      padding: 18px 0 5px 0;
+}
+.login_cart a {
+	list-style: none;
+	padding: 0 8px;
+	text-decoration: none;
+	color: #635F5B;
+	font-size: 14px;	
+}
+.login_cart a:hover, .menu li a:hover {
+	color: #080707;
+    text-decoration: underline;
+}
+.login_cart a:last-child {
+	padding-right: 0px;
+}
+.nav {
+   clear: right;
+   float: right;
+}
+.menu-icon {
+    text-align: right;
+    display: none;
+}
+#hamburger {
+    fill: #513926; 
+}
+#hamburger:hover {
+    fill: rgba(148, 39, 11, 0.91);
+}
+.menu li  {
+	float: left;
+	display: block;
+}
+.menu li a {
+	color: #635F5B;	
+	text-decoration: none;
+	font-size: 14px;
+	display: block;
+	padding: 13px;
+}
+.menu .events > a {
+    padding-right: 0px;
+}
+/*section_one*/
+.section_white {
+	box-shadow: 5px 6px 18px 2px #a7a6a3;
+	background: rgba( 255, 255, 255, 0.7);
+}
+.one, .two, .three {
+    display: table;
+    margin: 50px auto;
+}	
+.visit, .sign_up, .shipping {
+	float: left;
+    text-align: center;
+    width: 33.3%;
+    padding-top: 35px;
+}
+.img_section_one {
+    display: block;
+    margin: 0 auto;
+}
+.section_header {
+    font-size: 36px;
+    color: #4b4b4b;
+    padding: 6px 0 28px 0;
+}
+form {
+	width: 240px;
+	height: 160px;
+	background-color:#e9e8e8;
+	font-size: 17px;
+	margin: 0 auto;
+}
+.form_register {
+    padding: 5px 0;
+    text-align: center;
+}
+label {
+    float: left;
+    padding-left: 11px;
+}
+.input_regist {
+	width: 200px;
+	height: 25px;
+	background: #fff;
+	box-shadow: inset 0 4px 2px -2px rgba(119, 102, 102, 0.4), 
+				inset 4px 0 2px -2px rgba(119, 102, 102, 0.4);
+    margin-bottom: 13px;
+    padding-left: 6px;
+}
+h2.section_header.form_header {
+    padding-top: 10px;
+}
+/*section_two*/
+.white_sect_two {
+    float: left;
+    padding: 20px;
+}
+.second {
+    float: right;
+}
+.three_sect {	
+    width: 430px;
+    height: 490px;
+    background: #2d2d2d;
+    color: #fff;
+}
+.order_first {
+	font-size: 24px;
+	text-align: center;
+	line-height: 60px;
+	background: #2d2d2d;
+}
+.img_sect_three {
+	width: 100%;
+}
+.price {
+	padding: 7px 0 0 23px;
+}
+.description_bottle {
+    font-family: 'Neutra Text Book';
+	font-size: 14px;
+	line-height: 25px;
+	padding-bottom: 6px;
+}
+.price_bottle {
+	font-size: 18px;
+	float: left;
+	width: 33.3%;
+	padding-top: 12px;
+}
+.bottle_case {
+    padding: 9px 0;
+}
+.buy_now {
+	float: left;
+	width: 33.3%;
+	text-align: center;
+	padding-top: 6px;
+}
+.qty, .click_buy_now {
+    float: left;
+    padding-left: 17px;
+    line-height: 30px;
+    margin-right: -12px;
+    font-family:'Neutra Text Demi'; 
+}
+.input_number {
+    width: 40px;
+    height: 25px;
+    margin-bottom: 23px;
+    background: #fff;
+    box-shadow: inset 0 4px 2px -2px rgba(209, 192, 192, 0.4),
+                inset 4px 0 2px -2px rgba(209, 192, 192, 0.4);
+}
+input[type="number"]{
+    padding-left:7px;
+}
+p.click_buy_now {
+    padding-right: 25px;
+}
+.click_buy_now a {
+	color: #fff;
+	text-decoration: none;
+}
+.click_buy_now a:hover {
+   color: #de2821;
+}
+.image_section_two{
+    width: 33.3%;
+    float: left;
+}
+/*three*/
+section.three.container.section_white {
+    text-align: center;
+}
+.section_header_three_sect {
+    font-size: 60px;
+    padding: 7px 0;
+}
+.img_three_section {
+    padding: 19px 19px 34px; 
+}
+/*footer*/
+footer {
+	float: left;
+    width: 100%;
+	background: #2d2d2d;
+	color: #fff;
+    font-family: 'Neutra Text Book';
+	padding-top: 30px;
+}
+.footer_contacts{
+	float: left;
+	width: 31%;
+    padding-bottom: 61px;
+}
+.first_group {
+    margin-right: 64px
+}
+.footer_header {
+    border-bottom: 1px solid #fff;
+    width: 70%;
+    font-size: 18px;
+    padding-bottom: 3px;
+    margin-bottom: 11px;
+}
+.footer_navigation li a {
+	color: #fff;
+	text-decoration: none;
+    font-size: 14px;
+    line-height: 17px;
+}
+.footer_navigation li a:hover{
+    color:#ff0000;
+}
+.group_contacts {
+    font-size: 14px;
+}
+.email_img {
+    background: url(../images/letter.png);
+}
+.tel_img {
+    background: url(../images/phone.png);
+}
+.email_img, .tel_img {
+    background-repeat: no-repeat;   
+    padding: 0 0 8px 64px;
+}
+a.e_mail_cont {
+    line-height: 35px;
+    color: #fff;
+    text-decoration: none;
+}
+a.e_mail_cont:hover {
+    color: #ff0000;
+}
+.last_header, .social_group {
+    float: right;
+}
+a.soc_img_group {
+    float: left;
+    margin: 7px 24px 0 0;
+}
+
+/*media_queries*/
+@media only screen and (min-width: 960px) {
+    .container {
+        width: 960px;
+    }
+}
+@media only screen and (max-width: 959px) {
+    .login_cart a, .menu li a {
+        font-size: 12px;
+    }
+    .logo_image {
+        width: 50%; 
+    }
+    .img_logo {
+        width: 100%; 
+    }
+}
+@media only screen and (min-width: 768px) {
+    .container{
+        margin-left: auto;
+        margin-right: auto;
+        display: table;
+    }
+    .menu_mobile  {
+        display: none!important;
+    }
+ }
+@media only screen and (min-width: 768px) and (max-width: 959px){
+    .container {
+        width: 750px;
+    }
+    .menu li a {
+        padding: 7px;
+    }
+    .autumn_background {
+        background: url(../images/slide.png) center bottom no-repeat;
+        height: 400px;
+    }
+    .section_header {
+        font-size: 29px;
+    }
+    img.img_section_one {
+        width: 210px;
+    }
+    form {
+        width: 210px;
+        height: 140px;
+    }
+    .input_regist {
+        width: 175px;
+        height: 21px;
+    }
+    .form_register {
+        padding: 3px 0;
+    }
+    h2.section_header.form_header {
+        padding-top: 6px;
+    }
+    .three_sect {
+        max-width: 330px;
+        height: 430px;
+    }
+    .order_first {
+        font-size: 20px;
+        line-height: 55px;
+    }
+    .description_bottle {
+        font-size: 12px;
+        line-height: 23px;
+    }
+    .price_bottle {
+        font-size: 15px;
+    }
+    .qty, .click_buy_now {
+        padding-left: 0px;
+    }
+    .input_number {
+        margin-bottom: 16px;
+    }
+    .section_header_three_sect {
+        font-size: 45px;
+    }
+    img.img_three_section {
+        width: 205px;
+    }
+    .first_group {
+         margin-right: 40px; 
+    }
+    .footer_header {
+        width: 80%;
+    }
+    a.soc_img_group {
+    margin: 7px 16px 0 0;
+	}
+}
+@media only screen and (max-width: 767px) {
+    .container {
+        width: 410px;
+    }
+    .login_cart {
+        display: none;
+    }
+    .menu {
+        display: none;
+    }
+    .img_logo {
+        width: auto;
+    }
+    .menu_mobile {
+        float: left;
+        display: none;
+        width: 100%;
+    }
+    .mob_menu {
+    	display: table;
+    	margin: auto;
+    }
+    .mob_menu li{
+    	display: table;
+    }
+    .menu_mobile li a {
+        text-decoration: none;
+        text-align: center;
+        color: #635F5B;
+        font-size: 13px;
+        font-weight: bold;
+        padding: 5px 0;
+    }
+    .menu_mobile  li a:hover {
+        text-decoration: underline;
+        color: #5d130f;
+    }
+    .menu-icon {
+        display: block;
+        padding: 15px 30px;
+    }
+    .autumn_background {
+        background: url(../images/slide.png) center bottom no-repeat;
+        height: 300px;
+    }
+    .one, .two, .three {
+        margin: 30px auto;
+    }
+    .visit, .sign_up, .shipping {
+        float: none; 
+        width: 100%;
+        text-align: center;
+        padding-top: 20px;
+    }
+    .section_header {
+        padding: 6px 0 0px 0;
+    }
+    .ship {
+        padding-bottom: 30px;
+    }
+    .white_sect_two, .second  {
+        float: none;
+    }
+    .second {
+        margin-top: 30px;
+    }
+    .three_sect {
+        width: 370px;
+        height: 480px;
+    }
+    .section_header_three_sect {
+        font-size: 40px;
+    }
+    .img_three_section {
+        padding-bottom: 0; 
+    }
+    .qty, .click_buy_now {
+        padding-left: 10px;
+        margin-right: -9px;
+    }
+    .section_header_three_sect{
+        padding: 20px 0 0 0;
+    }
+    .last_image img {
+        padding-bottom: 20px;
+    }
+     footer {
+        padding-top: 0;
+    }
+    .footer_contacts {
+        width: 100%;
+        padding: 15px 0;
+    }
+    .footer_contacts, .last_header, .social_group {
+        float: none;
+    }
+    .footer_header {
+        width: 100%;
+        text-align: center;
+    }
+    .first_group {
+        margin-right: 0;
+    }
+    ul.footer_navigation, .group_contacts.email_img, .group_contacts.tel_img, .social_group {   
+        display: table;
+        margin: auto;
+	}
+	.group_contacts.tel_img {
+	    padding-right: 60px;
+	}
+}
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .img_logo {
+        max-width: 300px;
+    }
+}
+@media only screen and (max-width: 480px) {
+    .container { 
+        width: 275px;
+    }
+    .img_logo {
+        max-width: 200px;
+        margin: 10px auto;
+    }
+    .menu_mobile li a {
+        font-size: 11px;
+    }  
+    .menu-icon {
+        padding: 15px;
+    } 
+    .three_sect {
+        width: 255px;
+        height: 400px;
+    }
+    .white_sect_two, .second  {
+        padding: 10px;
+    }
+    .order_first {
+        font-size: 16px;
+        line-height: 50px;
+    }
+    .description_bottle {
+        font-size: 12px;
+        line-height: 21px;
+    }
+    .first .description_bottle {
+        padding-bottom: 0;
+    }
+    .price {
+        padding: 7px 0 0 10px;
+    }
+    .price_bottle {
+        font-size: 15px;
+    }
+    .qty, .click_buy_now {
+        padding-left: 0;
+    }
+    .bottle_case {
+        padding: 2px 0;
+    }
+    .buy_now {
+        font-size: 14px;
+    }
+    p.click_buy_now {
+        padding-right: 0; 
+    }
+    .input_number {
+        width: 28px;
+        height: 22px;
+        margin: 0 0 19px 7px;
+    }
+    .image_section_two img {
+        width: 70px;
+        height: 70px;
+    }
+    .section_header {
+        padding: 12px 0 0 0;
+        font-size: 25px;
+    }
+    .section_header_three_sect {
+        font-size: 30px;
+    }
+    .ship  {
+        padding-bottom: 20px;
+    }
+    img.img_three_section {
+        width: 83%;
+    }
+   
+	.footer_header {
+	    font-size: 16px;
+	}
+	.group_contacts.email_img, a.e_mail_cont {
+	    font-size: 13px;
+	}
+	.email_img, .tel_img {
+	    background-size: 22%;
+	    padding: 0 0 8px 50px;
+	}
+	img.fb_tw_pint {
+	    width: 90%;
+	}
+	 a.soc_img_group {
+	    margin: 7px 12px 0 0;
+	}
+}
