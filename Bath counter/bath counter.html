@@ -24,29 +24,24 @@
 	  	var hours = 2;
 	    var plusPeople = 20;
 	    var plusHour = 100;
-  var differenceHours = inputHours - hours;
-  var difference = inputPeople - people;
-
-var sum1 = difference * plusPeople;
-var sum2 = differenceHours * plusHour;
- 
-
-  if (inputPeople <= people ||  inputHours <= hours) {
-    document.getElementById('result').innerHTML = sum1 + sumOne + " грн.";
- }
-
-// if (inputPeople > people || inputHours > hours) { 
- 	
- 	
-// 	document.getElementById('result').innerHTML =  sum1 + sum2 + sumOne + " грн.";
-// }	
-
-
-if (inputHours > hours && inputPeople < people) {
-
-document.getElementById('result').innerHTML =  sumOne +  sum2 + " грн.";
- }
-};
-</script>
+		var difference = inputPeople - people;
+		var differenceHours = inputHours - hours;
+		var sum1=difference * plusPeople;
+		var sum2 = differenceHours * plusHour;
+	
+  		if (inputPeople <= people && inputHours <= hours) {
+    		document.getElementById('result').innerHTML =  sumOne + " грн.";
+ 		}
+ 		if (inputPeople >= people && inputHours >= hours) { 
+			document.getElementById('result').innerHTML =  sum1 + sum2 + sumOne + " грн.";
+		}
+		if (inputPeople >= people && inputHours <= hours){ 
+			document.getElementById('result').innerHTML =  sum1 + sumOne + " грн.";
+		}	
+		if (inputHours >= hours && inputPeople <= people){ 
+			document.getElementById('result').innerHTML =  sum2 + sumOne + " грн.";
+		}
+	};
+	</script>
  </body>
  </html>
