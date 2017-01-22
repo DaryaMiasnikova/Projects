@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="utf-8" />
+	<title>Счетчик бани</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
+ 	<h1>Предварительный заказ через сайт</h1>
+  <form>
+     <h2>Количество человек</h2>
+     <input type="number" name="people" min="1" max="15" >
+     <h2>Количество часов</h2>
+     <input type="number" name="hours" min="1" >
+ 	 <p><button type="button" class="btn" onclick='resultPeopleHours()'> ВСЕГО</button></p>   
+  </form>
+<div id="result"></div>
+
+  <script>
+   function resultPeopleHours() { 
+	    var inputPeople=document.getElementsByTagName('input')[0].value;
+	    var inputHours=document.getElementsByTagName('input')[1].value;
+	    var sumOne = 200;
+	    var people = 4;
+	  	var hours = 2;
+	    var plusPeople = 20;
+	    var plusHour = 100;
+  
+	
+  if (inputPeople <= people && inputHours <= hours) {
+    document.getElementById('result').innerHTML =  sumOne + " грн.";
+ }
+
+ else { 
+ 	var difference = inputPeople - people;
+ 	var sum1=difference * plusPeople;
+	var differenceHours = inputHours - hours;
+	var sum2 = differenceHours * plusHour;
+	document.getElementById('result').innerHTML =  sum1 + sum2 + sumOne + " грн.";
+}	
+};
+</script>
+ </body>
+ </html>
