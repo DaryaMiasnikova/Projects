@@ -10,7 +10,7 @@
      <h2>Количество человек</h2>
      <input type="number" name="people" min="1" max="15" >
      <h2>Количество часов</h2>
-     <input type="number" name="hours" min="1" >
+     <input type="number" name="hours" min="1">
  	 <p><button type="button" class="btn" onclick='resultPeopleHours()'> ВСЕГО</button></p>   
   </form>
 <div id="result"></div>
@@ -28,7 +28,20 @@
 		var differenceHours = inputHours - hours;
 		var sum1=difference * plusPeople;
 		var sum2 = differenceHours * plusHour;
-	
+// проверка
+
+		if (inputPeople == '' || inputHours == '') {
+		   alert ('Не заполнено поле') 
+		return false;}		
+		if (inputPeople == 0) {
+			alert ('Пожалуйста, укажите количетво человек не менее 1')
+		return false;}		
+		if (inputHours == 0) {
+			alert ('Пожалуйста, укажите количетво часов не менее 1')
+		return false;}
+ 
+
+
   		if (inputPeople <= people && inputHours <= hours) {
     		document.getElementById('result').innerHTML =  sumOne + " грн.";
  		}
@@ -40,8 +53,8 @@
 		}	
 		if (inputHours >= hours && inputPeople <= people){ 
 			document.getElementById('result').innerHTML =  sum2 + sumOne + " грн.";
-		}
-	};
+		}	
+};
 	</script>
  </body>
  </html>
