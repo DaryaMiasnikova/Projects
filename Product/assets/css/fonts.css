@@ -1,0 +1,67 @@
+@font-face {
+    font-family: 'arialbold';
+    src: url("../fonts/ArialBold/arialbd-webfont.eot");
+    src: url("../fonts/ArialBold/arialbd-webfont.eot?#iefix") format("embedded-opentype"),
+         url("../fonts/ArialBold/arialbd-webfont.woff2") format("woff2"),
+         url("../fonts/ArialBold/arialbd-webfont.wof") format("woff"),
+         url("../fonts/ArialBold/arialbd-webfont.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "ArialRegular";
+    src: url("../fonts/ArialRegular/ArialRegular.eot");
+    src: url("../fonts/ArialRegular/ArialRegular.eot?#iefix") format("embedded-opentype"),
+         url("../fonts/ArialRegular/ArialRegular.woff") format("woff"),
+         url("../fonts/ArialRegular/ArialRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}   
+@font-face {
+  font-family: 'MyriadPro-Bold';
+  src: url("../fonts/MyriadProBold/MyriadPro-Bold.eot?#iefix") format("embedded-opentype"),
+       url("../fonts/MyriadProBold/MyriadPro-Bold.otf") format("opentype"),
+       url("../fonts/MyriadProBold/MyriadPro-Bold.woff") format("woff"),
+       url("../fonts/MyriadProBold/MyriadPro-Bold.ttf") format("truetype"),
+       url("../fonts/MyriadProBold/MyriadPro-Bold.svg#MyriadPro-Bold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+    font-family: 'MyriadPro-Regular';
+    src: url("../fonts/MyrialProRegular/MyriadPro-Regular.eot?#iefix") format("embedded-opentype"),
+         url("../fonts/MyrialProRegular/MyriadPro-Regular.otf") format("opentype"),
+         url("../fonts/MyrialProRegular/MyriadPro-Regular.woff") format("woff"), 
+         url("../fonts/MyrialProRegular/MyriadPro-Regular.ttf") format("truetype"),
+         url("../fonts/MyrialProRegular/MyriadPro-Regular.svg#MyriadPro-Regular") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Verdana-Regular';
+    src: url("../fonts/VerdanaRegular/Verdana.eot?#iefix") format("embedded-opentype"), 
+         url("../fonts/VerdanaRegular/Verdana.otf") format("opentype"),
+	 url("../fonts/VerdanaRegular/Verdana.woff") format("woff"),
+         url("../fonts/VerdanaRegular/Verdana.ttf") format("truetype"), 
+         url("../fonts/VerdanaRegular/Verdana.svg#Verdana") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Verdana-Bold';
+    src: url("../fonts/VerdanaBold/Verdana-Bold.eot?#iefix") format("embedded-opentype"),
+         url("../fonts/VerdanaBold/Verdana-Bold.woff") format("woff"),
+         url("../fonts/VerdanaBold/Verdana-Bold.ttf")  format("truetype"), 
+         url("../fonts/VerdanaBold/Verdana-Bold.svg#Verdana-Bold") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SegoeUI-Bold';
+    src: url("../fonts/SegoeUIBold/SegoeUI-Bold.eot?#iefix") format("embedded-opentype"),
+         url("../fonts/SegoeUIBold/SegoeUI-Bold.woff") format("woff"), 
+         url("../fonts/SegoeUIBold/SegoeUI-Bold.ttf")  format("truetype"),
+         url("../fonts/SegoeUIBold/SegoeUI-Bold.svg#SegoeUI-Bold") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
