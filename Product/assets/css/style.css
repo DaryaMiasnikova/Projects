@@ -8,7 +8,8 @@ header,.slider, main, nav, footer {
     width: 100%;
 }
 .header_background {
-    background-image: url(../images/bground_header.png);
+    background: url(../images/bground_header.png) no-repeat;
+    background-size: cover;
 }
 .container {
     width: 960px;
