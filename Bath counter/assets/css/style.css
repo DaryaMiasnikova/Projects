@@ -49,3 +49,7 @@ input[type="number"] {
   border-radius: 5px;
   margin-top: 15px;
 }
+#result {
+  font-size: 20px;
+  color: #e7e2e1;
+}

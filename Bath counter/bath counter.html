@@ -18,38 +18,24 @@
    function resultPeopleHours() { 
 	    var inputPeople=document.getElementsByTagName('input')[0].value;
 	    var inputHours=document.getElementsByTagName('input')[1].value;
-	    var sumOne = 200;
-	    var people = 4;
-	  	var hours = 2;
-	    var plusPeople = 20;
-	    var plusHour = 100;
-		var difference = inputPeople - people;
-		var differenceHours = inputHours - hours;
-		var sum1=difference * plusPeople;
-		var sum2 = differenceHours * plusHour;
 // проверка
 		if (inputPeople == '' || inputHours == '') {
 		   alert ('Не заполнено поле') 
-		return false;}		
+			return false;}		
 		if (inputPeople == 0) {
 			alert ('Пожалуйста, укажите количетво человек не менее 1')
-		return false;}		
+			return false;}		
 		if (inputHours == 0) {
 			alert ('Пожалуйста, укажите количетво часов не менее 1')
-		return false;}
-// условия
-  		if (inputPeople <= people && inputHours <= hours) {
-    		document.getElementById('result').innerHTML =  sumOne + " грн.";
- 		}
- 		if (inputPeople >= people && inputHours >= hours) { 
-			document.getElementById('result').innerHTML =  sum1 + sum2 + sumOne + " грн.";
-		}
-		if (inputPeople >= people && inputHours <= hours){ 
-			document.getElementById('result').innerHTML =  sum1 + sumOne + " грн.";
-		}	
-		if (inputHours >= hours && inputPeople <= people){ 
-			document.getElementById('result').innerHTML =  sum2 + sumOne + " грн.";
-		}	
+			return false;}	
+
+// document.getElementById('result').innerHTML = (inputPeople > 4) ? ((inputPeople - 4) * 20 + 200) :200 && (inputHours > 2) ? ((inputHours - 2) * 100 + 200) : 200;
+
+		var people = (inputPeople > 4) ? ((inputPeople - 4) * 20 + 200) : 200;
+		var hours = (inputHours > 2) ? ((inputHours - 2) * 100 + 200) : 200;
+		var summ = people  + hours - 200;
+		var every = summ / inputPeople;
+		document.getElementById('result').innerHTML = summ + " грн." + '<br>' + " C каждого по: " + Math.round(every) + " грн."; 
 	};
 </script>
  </body>
