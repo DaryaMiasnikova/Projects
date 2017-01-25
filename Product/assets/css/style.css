@@ -45,7 +45,7 @@ header,.slider, main, nav, footer {
 .top_group a {
     color: #fff;
     text-decoration: none;
-    padding: 0 20px;
+    padding: 8px 20px;
     font-size: 12px;
 }
 .cart {
@@ -95,7 +95,7 @@ li.cart.second {
     color: #1e99d8;
 }
 .bask_group a {
-    padding: 0 14px;
+    padding: 8px 14px;
     font-size: 11px;
     font-family: "ArialRegular";
 }
@@ -187,6 +187,7 @@ li.ru_lang {
     color: #fff;
     font-family: 'Verdana-Regular';
     font-size: 11px;  
+    padding: 10px;
 }
 .slider {
     position: relative;
@@ -251,21 +252,21 @@ nav ul {
     margin: 0 auto;
 }
 nav li {
-    width: 277px;
+    width: 280px;
     height: 38px;
     text-align: center;
     float: left;
     list-style: none;   
     border-radius: 0 0 10px 10px;
-    margin-left: -59px;
+    margin-left: -63px;
     -webkit-box-shadow: 7px 3px 8px rgba(0,0,0,0.5);
     -moz-box-shadow: 7px 3px 8px rgba(0,0,0,0.5);
     box-shadow: 7px 3px 8px rgba(0,0,0,0.5);   
-    -moz-transform: perspective(34px) rotateX(-10deg); 
-    -ms-transform: perspective(34px) rotateX(-10deg); 
-    -webkit-transform: perspective(34px) rotateX(-10deg);
-    -o-transform: perspective(34px) rotateX(-10deg); 
-    transform: perspective(34px) rotateX(-10deg);
+    -moz-transform: perspective(22px) rotateX(-6deg); 
+    -ms-transform: perspective(22px) rotateX(-6deg); 
+    -webkit-transform: perspective(22px) rotateX(-6deg);
+    -o-transform: perspective(22px) rotateX(-6deg); 
+    transform: perspective(22px) rotateX(-6deg);
 }
 .left_box_shadow {
     -webkit-box-shadow: 7px 3px 8px rgba(0,0,0,0.5), 0px 0px 8px rgba(0,0,0,0.5);
@@ -273,26 +274,28 @@ nav li {
     box-shadow: 7px 3px 8px rgba(0,0,0,0.5), 0px 0px 8px rgba(0,0,0,0.5);
 }
 .left_box_shadow a {
-    padding-left: 10px;
+    padding-right: 6px;
+}
+.box_last a {
+    padding-left: 6px;
 }
 nav li:hover {
     background: #000828;
     height: 39px;
+    margin-top: -1px;
 }
 nav li a {
     text-decoration:none;
     color: #666666;
     font-size: 14px;
-    line-height: 38px;
+    line-height: 11px;
     display: block;
+    padding: 15px;
 } 
 nav li a:hover {
     text-shadow: 1px 1px 0 #034cc2;
     color: #22a3dc;
     font-size: 18px;
-}
-.last_blog a{
-    padding-right: 14px;
 }
 .columns {
     width: 49%;
@@ -472,7 +475,7 @@ img.img_group.thirty_image {
 }
 .video {
     float: left;
-    margin: 69px 0 1px -9px;
+    margin: 68px 0 1px -9px;
 }
 iframe {
     border: 0;
@@ -534,8 +537,8 @@ footer {
     float: left;
     text-align: center;
     width: 33%;
-    margin: 10px 0 0 7px;
-    line-height: 110px;
+    margin: 10px 0 0 8px;
+    line-height: 108px;
 }
 .all_icons{
     float: right;
