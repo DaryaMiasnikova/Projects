@@ -1,0 +1,173 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>ПЯТНАШКИ</title>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+	</head>
+ <style type="text/css">
+body {
+ 	background: #f8ffe8;
+	background: linear-gradient(to right, #f8ffe8,#e3f5ab 33%,#d899d1);
+	background-size: 6px 2px;
+	font-family: "Arial";
+   }
+#board {
+    display: block;
+    background: #fff;
+    margin: 40px auto 30px auto;
+    padding: 2px;
+    border: 3px solid #6E3D6F;
+    width: 276px;
+    height: 276px;
+    position: relative;
+}
+#buttons {
+    display: block;
+    text-align: center;
+}
+#new {
+    height: 39px;
+	width: 105px;
+	color: #fff;
+	border: 1px solid #421a54;
+	background: linear-gradient(to bottom, #C8A5E1 0%, #43225f 100%);
+	cursor: pointer;
+	font-size: 14px;
+	font-weight: 600;
+}
+.block {
+    display: block;
+    position: absolute;
+    width: 62px;
+    height: 57px;
+    border: 2px solid #6D3799;
+    margin: 2px;
+    font-weight: bold;
+    font-size: 48px;
+    text-align: center;
+    color: #fff;
+	background: linear-gradient(to top, #461568 0%, #a092ba 50%, #53227b 100%);
+    padding-top: 5px;    
+}
+
+.x1y1 { left: 0px; top: 0px;}
+.x2y1 { left: 70px; top: 0px;}
+.x3y1 { left: 140px; top: 0px;}
+.x4y1 { left: 210px; top: 0px;}
+
+.x1y2 { left: 0px; top: 70px;}
+.x2y2 { left: 70px; top: 70px;}
+.x3y2 { left: 140px; top: 70px;}
+.x4y2 { left: 210px; top: 70px;}
+
+.x1y3 { left: 0px; top: 140px;}
+.x2y3 { left: 70px; top: 140px;}
+.x3y3 { left: 140px; top: 140px;}
+.x4y3 { left: 210px; top: 140px;}
+
+.x1y4 { left: 0px; top: 210px;}
+.x2y4 { left: 70px; top: 210px;}
+.x3y4 { left: 140px; top: 210px;}
+.x4y4 { left: 210px; top: 210px;}
+</style>
+
+<body >
+	<div id="board"></div>
+		<div id="buttons">
+	    <input type="button" id="new" value="Новая игра!" />
+	</div>
+
+<script type="text/javascript">
+$(document).ready(function(){
+
+// функция запуска скрипта
+function init() {
+    // создаем поле с блоками
+    create();
+    // добавляем поддержку клавиатуры
+    window.addEventListener('keydown', keyboardEvent, false);
+    // добавляем события для кнопок
+    document.getElementById('new').onclick = newGame;
+    // мешаем блоки для начала игры
+    newGame();
+}
+
+// функция для получения класса вида xNyN для позиций от 1 до 15
+function getXY(i) { return 'x'+( ((i-1) % 4)+1 )+'y'+Math.ceil( (i)/4); }
+
+// создаем поле внутри блока с ID #board
+function create() {
+    for(var i=1; i<=15; i++) {
+        $('#board').append('<div class="block block-'+i+' '+getXY(i)+'">'+i+'</div>');
+    }
+}
+
+// обрабатываем нажатие по клавиатуре
+function keyboardEvent(e) {
+    switch(e.keyCode) {
+        case 38: key('up');    break;
+        case 40: key('down');  break;
+        case 37: key('left');  break;
+        case 39: key('right'); break;
+    }
+    checkWin();
+}
+
+// обрабатываем сдвиг одного блока по направлениям up/down/left/right
+function key( type ) {
+    for(var a = 1; a <= 4; a++)
+        for(var b = 1; b <= 3; b++) {
+            switch( type ) {
+                case 'up':
+                    var from = 'x'+a+'y'+(b+1);
+                    var to   = 'x'+a+'y'+b;
+                    break;
+                case 'down':
+                    var from = 'x'+a+'y'+(4-b);
+                    var to   = 'x'+a+'y'+(5-b);
+                    break;
+                case 'left':
+                    var from = 'x'+(b+1)+'y'+a;
+                    var to   = 'x'+b+'y'+a;
+                    break;
+                case 'right':
+                    var from = 'x'+(4-b)+'y'+a;
+                    var to   = 'x'+(5-b)+'y'+a;
+                    break;
+            }
+            if( !$('.'+to).length ) {$('.'+from).removeClass(from).addClass(to);return}
+        }
+}
+
+// получение случайного числа от min до max
+function getRandomInt(min, max) { return Math.floor(Math.random() * (max - min + 1)) + min; }
+
+// мешаловка блоков
+function newGame() {
+    for(var a=1; a <= 1000; a++) {
+        switch( getRandomInt(1 , 4) ) {
+            case 1: key('up');    break;
+            case 2: key('down');  break;
+            case 3: key('left');  break;
+            case 4: key('right'); break;
+        }
+    }
+}
+
+// проверка, а вдруг вы уже победили
+function checkWin() {
+    var good = 0;
+    for(var i=1; i <= 15; i++) {
+        if( $('.block-'+i).hasClass( getXY(i) ) ) good++;
+    }
+    if(good == 15) alert('Игра окончена! Вы победили!');
+}
+
+init();
+});
+ </script>
+</body>
+</html>
